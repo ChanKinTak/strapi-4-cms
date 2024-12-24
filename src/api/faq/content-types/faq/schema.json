@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqs",
+  "info": {
+    "singularName": "faq",
+    "pluralName": "faqs",
+    "displayName": "FAQ",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "question": {
+      "type": "string",
+      "required": true
+    },
+    "question_tc": {
+      "type": "string",
+      "required": true
+    },
+    "answer": {
+      "type": "blocks",
+      "required": true
+    },
+    "display_order": {
+      "type": "integer",
+      "default": 0
+    },
+    "status": {
+      "type": "boolean",
+      "default": true
+    },
+    "last_updated": {
+      "type": "datetime"
+    }
+  }
+}
